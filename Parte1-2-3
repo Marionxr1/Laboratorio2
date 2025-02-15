@@ -1,0 +1,197 @@
+**Parte1** 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Declaración de variables
+        int numeroEntero;
+        double numeroDecimal;
+        string texto;
+        bool valorVerdaderoFalso;
+
+        // Pedir al usuario que ingrese valores para cada variable
+        Console.WriteLine("Introduce un número entero:");
+        numeroEntero = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduce un número decimal:");
+        numeroDecimal = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduce un texto:");
+        texto = Console.ReadLine();
+
+        Console.WriteLine("Introduce un valor verdadero o falso (true o false):");
+        valorVerdaderoFalso = bool.Parse(Console.ReadLine());
+
+        // Mostrar los valores introducidos por consola
+        Console.WriteLine("\nLos valores que ingresaste son:");
+        Console.WriteLine($"Número entero: {numeroEntero}");
+        Console.WriteLine($"Número decimal: {numeroDecimal}");
+        Console.WriteLine($"Texto: {texto}");
+        Console.WriteLine($"Valor verdadero o falso: {valorVerdaderoFalso}");
+    }
+}
+
+**Parte2**
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Declaración de variables de tipo int
+        int num1Int, num2Int;
+
+        // Pedir valores al usuario para las variables int
+        Console.WriteLine("Introduce el primer número (int):");
+        num1Int = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduce el segundo número (int):");
+        num2Int = int.Parse(Console.ReadLine());
+
+        // Realizar las operaciones con los valores enteros (int)
+        Console.WriteLine("\nOperaciones con int:");
+        Console.WriteLine($"Suma: {num1Int + num2Int}");
+        Console.WriteLine($"Resta: {num1Int - num2Int}");
+        Console.WriteLine($"Multiplicación: {num1Int * num2Int}");
+        Console.WriteLine($"División: {num1Int / num2Int}\n");
+
+        // Declaración de variables de tipo decimal
+        decimal num1Decimal, num2Decimal;
+
+        // Pedir valores al usuario para las variables decimal
+        Console.WriteLine("Introduce el primer número (decimal):");
+        num1Decimal = decimal.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduce el segundo número (decimal):");
+        num2Decimal = decimal.Parse(Console.ReadLine());
+
+        // Realizar las operaciones con los valores decimales (decimal)
+        Console.WriteLine("\nOperaciones con decimal:");
+        Console.WriteLine($"Suma: {num1Decimal + num2Decimal}");
+        Console.WriteLine($"Resta: {num1Decimal - num2Decimal}");
+        Console.WriteLine($"Multiplicación: {num1Decimal * num2Decimal}");
+        Console.WriteLine($"División: {num1Decimal / num2Decimal}\n");
+
+        // Declaración de variables de tipo float
+        float num1Float, num2Float;
+
+        // Pedir valores al usuario para las variables float
+        Console.WriteLine("Introduce el primer número (float):");
+        num1Float = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduce el segundo número (float):");
+        num2Float = float.Parse(Console.ReadLine());
+
+        // Realizar las operaciones con los valores float
+        Console.WriteLine("\nOperaciones con float:");
+        Console.WriteLine($"Suma: {num1Float + num2Float}");
+        Console.WriteLine($"Resta: {num1Float - num2Float}");
+        Console.WriteLine($"Multiplicación: {num1Float * num2Float}");
+        Console.WriteLine($"División: {num1Float / num2Float}\n");
+
+        // Declaración de variables de tipo int16
+        short num1Int16, num2Int16;
+
+        // Pedir valores al usuario para las variables int16
+        Console.WriteLine("Introduce el primer número (int16):");
+        num1Int16 = short.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduce el segundo número (int16):");
+        num2Int16 = short.Parse(Console.ReadLine());
+
+        // Realizar las operaciones con los valores int16
+        Console.WriteLine("\nOperaciones con int16:");
+        Console.WriteLine($"Suma: {num1Int16 + num2Int16}");
+        Console.WriteLine($"Resta: {num1Int16 - num2Int16}");
+        Console.WriteLine($"Multiplicación: {num1Int16 * num2Int16}");
+        Console.WriteLine($"División: {num1Int16 / num2Int16}\n");
+
+        // Declaración de variables de tipo byte
+        byte num1Byte, num2Byte;
+
+        // Pedir valores al usuario para las variables byte
+        Console.WriteLine("Introduce el primer número (byte):");
+        num1Byte = byte.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduce el segundo número (byte):");
+        num2Byte = byte.Parse(Console.ReadLine());
+
+        // Realizar las operaciones con los valores byte
+        Console.WriteLine("\nOperaciones con byte:");
+        Console.WriteLine($"Suma: {num1Byte + num2Byte}");
+        Console.WriteLine($"Resta: {num1Byte - num2Byte}");
+        Console.WriteLine($"Multiplicación: {num1Byte * num2Byte}");
+        Console.WriteLine($"División: {num1Byte / num2Byte}");
+    }
+}
+
+**Parte3**
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Pedir al usuario dos valores numéricos
+        Console.WriteLine("Introduce el primer número:");
+        int num1 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Introduce el segundo número:");
+        int num2 = int.Parse(Console.ReadLine());
+
+        // Comparaciones con operadores lógicos
+        Console.WriteLine("\nResultados:");
+
+        // Comparación de mayor (>)
+        if (num1 > num2)
+        {
+            Console.WriteLine($"El número ({num1}) es mayor que el número ({num2}).");
+        }
+        else
+        {
+            Console.WriteLine($"El número ({num1}) no es mayor que el número ({num2}).");
+        }
+
+        // Comparación de menor (<)
+        if (num1 < num2)
+        {
+            Console.WriteLine($"El número ({num1}) es menor que el número ({num2}).");
+        }
+        else
+        {
+            Console.WriteLine($"El número ({num1}) no es menor que el número ({num2}).");
+        }
+
+        // Comparación de igual (==)
+        if (num1 == num2)
+        {
+            Console.WriteLine($"El número ({num1}) es igual al número ({num2}).");
+        }
+        else
+        {
+            Console.WriteLine($"El número ({num1}) no es igual al número ({num2}).");
+        }
+
+        // Uso de AND (&&) en una expresión lógica
+        if (num1 > 0 && num2 > 0)
+        {
+            Console.WriteLine("Ambos números son mayores que cero.");
+        }
+        else
+        {
+            Console.WriteLine("Al menos uno de los números no es mayor que cero.");
+        }
+
+        // Uso de OR (||) en una expresión lógica
+        if (num1 > 0 || num2 > 0)
+        {
+            Console.WriteLine("Al menos uno de los números es mayor que cero.");
+        }
+        else
+        {
+            Console.WriteLine("Ninguno de los números es mayor que cero.");
+        }
+    }
+}
