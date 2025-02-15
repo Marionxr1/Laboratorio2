@@ -1,0 +1,90 @@
+Enunciado2 Dia de la semana
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Pedir al usuario que ingrese un número entre 1 y 7
+        Console.WriteLine("Introduce un número entre 1 y 7 para obtener el día de la semana:");
+        int numero = int.Parse(Console.ReadLine());
+
+        // Usar un switch para determinar el nombre del día
+        string dia;
+
+        switch (numero)
+        {
+            case 1:
+                dia = "Lunes";
+                break;
+            case 2:
+                dia = "Martes";
+                break;
+            case 3:
+                dia = "Miércoles";
+                break;
+            case 4:
+                dia = "Jueves";
+                break;
+            case 5:
+                dia = "Viernes";
+                break;
+            case 6:
+                dia = "Sábado";
+                break;
+            case 7:
+                dia = "Domingo";
+                break;
+            default:
+                dia = "Número inválido. Por favor, ingresa un número entre 1 y 7.";
+                break;
+        }
+
+        // Mostrar el resultado
+        Console.WriteLine(dia);
+    }
+}
+
+R// Use un switch ya que el dia depende del numero ingresado, es un condicional.
+
+Enunciado3 Usuario-Contraseña
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Definir un nombre de usuario y contraseña predefinidos
+        string usuarioCorrecto = "mario01";
+        string contrasenaCorrecta = "rs07";
+
+        // Pedir al usuario que ingrese su nombre de usuario
+        Console.WriteLine("Introduce tu nombre de usuario:");
+        string usuarioIngresado = Console.ReadLine();
+
+        // Pedir al usuario que ingrese su contraseña
+        Console.WriteLine("Introduce tu contraseña:");
+        string contrasenaIngresada = Console.ReadLine();
+
+        // Verificar las condiciones con if-else
+        if (usuarioIngresado == usuarioCorrecto && contrasenaIngresada == contrasenaCorrecta)
+        {
+            // Acceso concedido
+            Console.WriteLine("Acceso concedido");
+        }
+        else if (usuarioIngresado == usuarioCorrecto && contrasenaIngresada != contrasenaCorrecta)
+        {
+            // Contraseña incorrecta
+            Console.WriteLine("Contraseña incorrecta");
+        }
+        else
+        {
+            // Usuario no registrado
+            Console.WriteLine("Usuario no registrado");
+        }
+    }
+}
+
+R// Use un If-Else ya que se busca determinar si los datos son corrector o incorrectos.
